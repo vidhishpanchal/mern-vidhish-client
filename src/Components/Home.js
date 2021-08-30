@@ -9,7 +9,7 @@ function Home() {
   const [userName, setUserName] = useState("");
   const callHomePage = async ()=>{
     try {
-      const res = await fetch("http://localhost:5000/", {
+      const res = await fetch("https://mern-vidhish.herokuapp.com/", {
         method: "GET",
         headers:{
           Accept: "application/json",

@@ -7,7 +7,7 @@ function Contact() {
   const [userData, setUserData] = useState({name:"", email:"", phone:"", message:""});
     const callContactPage = async ()=>{
         try {
-          const res = await fetch("http://localhost:5000/contact", {
+          const res = await fetch("https://mern-vidhish.herokuapp.com/contact", {
             method: "GET",
             headers:{
               Accept: "application/json",
@@ -45,7 +45,7 @@ function Contact() {
     const SendMessage = async (e)=>{
       e.preventDefault();
       const {name, email, phone, message} = userData
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch("https://mern-vidhish.herokuapp.com/contact", {
         method: "POST",
         headers: {
           Accept: "application/json",

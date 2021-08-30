@@ -6,7 +6,7 @@ function Logout() {
     const {state, dispatch} = useContext(UserContext)
     const history = useHistory();
     useEffect(() => {
-        fetch("http://localhost:5000/logout", {
+        fetch("https://mern-vidhish.herokuapp.com/logout", {
             method: "GET",
             headers:{
                 Accept: "application/json",

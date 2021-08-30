@@ -21,7 +21,7 @@ function Signup() {
             e.preventDefault();
 
             const {name, email, phone, work, password, cpassword} = user;
-            const res = await fetch("http://localhost:5000/signup", {
+            const res = await fetch("https://mern-vidhish.herokuapp.com/signup", {
                 method: "post",
                 headers:{
                     "Content-Type": "application/json"
