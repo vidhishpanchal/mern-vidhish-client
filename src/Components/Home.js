@@ -44,7 +44,7 @@ useEffect(() => {
         <div className="home_div">
          <p>WELCOME</p>
          <h1>{userName}</h1>
-         <h2>{show ? "Happy to see you here!" : `I am Vidhish Panchal - MERN Developer.`}</h2>
+         <h2>{show ? "Happy to see you here!" : `I am Vidhish Panchal MERN${'\u00A0'}Developer.`}</h2>
          
          </div>
         </>
